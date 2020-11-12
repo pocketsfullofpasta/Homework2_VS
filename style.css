@@ -1,0 +1,142 @@
+td 
+{
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;    
+}
+.blue {
+    height: 100px;
+    width: 100%;
+    background: blue;
+}
+.yellow {
+    height: 210px;
+    width: 100%;
+    background: yellow;
+}
+.green {
+    height: 100%;
+    width: 100%;
+    background: green;
+}
+.grey {
+    height: 100%;
+    width: 100%;
+    background: grey;
+}
+.red {
+    height: 100px;
+    width: 100%;
+    background: red;
+}
+.orange {
+    height: 100%;
+    width: 100%;
+    background: orange;
+}
+.toRight{
+    position: relative;
+}
+.toRight:hover div{
+    width: 100%;
+    animation: widthEnlarge 3s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.toLeft{
+    position: relative;
+}
+.toLeft:hover div{
+    width: 100%;
+    animation: widthEnlarge 3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.toAbove{
+    position: relative;
+}
+.toAbove:hover div{
+    height: 100%;
+    animation: heightEnlarge 3s;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.toBeyond {
+    position: relative;
+}
+.toBeyond:hover div {
+    height: 100%;
+    animation: heightEnlarge 3s;
+    position: absolute;
+    top: 0;
+}
+.slideMiddleRight {
+    position: relative;
+}
+.slideMiddleRight:hover div {
+    width: 50%;
+    animation: slideEnlarge 3s;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.slideMiddleLeft {
+    position: relative;
+}
+.SlideMiddleLeft:hover div {
+    width: 50%;
+    animation: slideEnlarge 3s;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+.slideRight {
+    position: relative;
+}
+.slideRight:hover div {
+    width: 50%;
+    animation: slideEnlarge 3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.slideLeft {
+    position: relative;
+}
+.SlideLeft:hover div {
+    width: 50%;
+    animation: slideEnlarge 3s;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+
+@keyframes widthEnlarge {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes heightEnlarge {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes slideEnlarge {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+}
